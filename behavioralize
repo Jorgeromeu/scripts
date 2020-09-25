@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# takes a truth table in pla format and uses espresso to optimize it. The output is formatted into behavioral VHDL
+
+# $1 input file
+
+espresso -o eqntott $1 | sed 's/!/not /g;s/!/not /g;s/&/ and /g;s/|/or/g;s/\=/<=/g' #| sed 's/\s*//g'
