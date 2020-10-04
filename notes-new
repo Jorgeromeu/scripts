@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# takes a screenshot and saves it to my notes image folder with 
+# the appropriate name, the link for inserting it in markdown is 
+# also copied to clipboard
+
+num=$(ls notes/assets/img | sort -n | sed -e '$!d;s/\.\S*//g')
+num=$((num + 1))
+
+gnome-screenshot -af $HOME/notes/assets/img/$num.png
+echo "![](/assets/img/$num.png)" | xclip -selection clipboard
+
+
+
+

@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# returns the next number for the img folder  in my notes repo
 
 num=$(ls notes/assets/img | sort -n | sed -e '$!d;s/\.\S*//g')
 num=$((num + 1))
 
 printf $num | xclip -selection clipboard
-
 notify-send "$num (copied)"
+echo $num
 
