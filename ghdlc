@@ -1,0 +1,3 @@
+# !/bin/bash
+
+ghdl -a $(ls | grep .vhd)

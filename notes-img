@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+num=$(ls notes/assets/img | sort -n | sed -e '$!d;s/\.\S*//g')
+num=$((num + 1))
+
+printf $num | xclip -selection clipboard
+
+notify-send "$num (copied)"
+
