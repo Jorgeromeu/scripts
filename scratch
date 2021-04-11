@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# this script opens a "scratchpad" vim buffer
+
+nvim $HOME/desktop/scratch.md

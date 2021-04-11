@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the script I use to start tmux autoatically when I open a terminal
-# The script checks if a session called main exists, if it does it attahces if it doesn't a session is created
+# The script checks if a session called "main" exists. If so attach to it, else create it and then attach
 # To automatically run the script you can launch the terminal emulator with the script by using:
 
 # alacritty -e tstart

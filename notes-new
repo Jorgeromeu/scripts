@@ -8,7 +8,7 @@ num=$(ls notes/assets/img | sort -n | sed -e '$!d;s/\.\S*//g')
 num=$((num + 1))
 
 gnome-screenshot -af $HOME/notes/assets/img/$num.png
-echo "![](/assets/img/$num.png)" | xclip -selection clipboard
+printf "![description](/assets/img/$num.png)" | xclip -selection clipboard
 
 
 

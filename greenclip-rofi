@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# calls rofi on greenclip 
+
+rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'

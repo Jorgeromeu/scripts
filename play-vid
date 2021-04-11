@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Simplest script in the world, just streams
+# a video in mpv. The link is taken from clipboard
+
+mpv $(xclip -selection clipboard -o)
