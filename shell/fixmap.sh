@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 # sets my xorg modifier keys
 

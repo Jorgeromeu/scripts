@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Recursively download an entire website including its assets
-
-wget --recursive --page-requisites --adjust-extension --span-hosts --convert-links --restrict-file-names=windows --domains $1 --no-parent $1

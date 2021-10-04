@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Opens a manpage for a program in the PDF viewer zathura
-
-color=$(xcolor)
-
-echo $color | xclip -selection clipboard
-notify-send "color $color copied to clipboard"

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# opens the most recently added image in inkscape for minor tweaks
-
-num=$(ls notes/assets/img | sort -n | sed -e '$!d;s/\.\S*//g')
-inkscape /home/jorge/notes/assets/img/$num.png

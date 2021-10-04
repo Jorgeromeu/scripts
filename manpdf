@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Opens a manpage for a program in the PDF viewer zathura
-
-man -t $1 | ps2pdf - | zathura -

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-date=$(date "+%d-%m-%Y")
-
-mcmap /home/jorge/world -file /home/jorge/test/$date.png
-
